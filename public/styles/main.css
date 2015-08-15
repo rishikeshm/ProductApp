@@ -1,0 +1,61 @@
+.navbar {
+  border-radius: 0px;
+}
+
+.navbar-nav li  a{
+  font-size: large;
+ }
+
+ .navbar-brand {
+ 	font-size: x-large;
+ }
+
+ .home-container, .edit-container {
+ 	font-size: 16px;
+ }
+
+.pad-top-20 {
+	padding-top: 20px;
+}
+
+.pad-bottom-20 {
+	padding-bottom: 20px;
+}
+
+.pad-top-5 {
+	padding-top: 5px;
+}
+
+.dropdown-menu > .active > a.product-name, .dropdown-menu > .active > a.product-name:focus, .dropdown-menu > .active > a.product-name:hover {
+	background-color: #050505;
+}
+
+.btn-black {
+	background-color: #000000;
+	color: #FFFFFF;
+	border-color: #0E0E0E;
+}
+
+.btn-black:hover, .btn-black:active, .btn-black:focus, .btn-black[disabled] {
+	background-color: #252424;
+}
+
+.right-inner-addon {
+	position: relative;
+}
+
+.right-inner-addon i {
+	position: absolute;
+	right: 0px;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #778899;
+}
+
+.right-inner-addon input {
+	padding-right: 30px;
+}
+
+.help-block {
+	font-size: 12px;
+}

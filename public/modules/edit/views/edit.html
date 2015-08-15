@@ -1,0 +1,96 @@
+<div class="container-fluid edit-container">
+	<div class="row">
+		<div class="col col-md-6 col-md-offset-3">
+			<form name="productForm" ng-submit="submitProductEntryForm(productForm.$valid)" novalidate>
+				<fieldset>
+					<legend><h3>New Product Entry</h3></legend>
+
+					<div class="row">
+						<div class="col col-md-4"><span><b>Product Name</b></span></div>
+						<div class="col col-md-8">
+							<div class="form-group right-inner-addon"  
+										ng-class="{'has-error' : productForm.productName.$invalid && !productForm.productName.$pristine}">
+								<input type="text" 
+											ng-model="product.name" 
+											name="productName" 
+											class="form-control" 
+											ng-focus="message.showInsertMsg=false" 
+											required>
+								<i class="glyphicon glyphicon-remove" ng-click="reset('name')"></i>
+								<div ng-show="productForm.productName.$invalid && !productForm.productName.$pristine" class="help-block">Product name is required.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row pad-top-20">
+						<div class="col col-md-4"><span><b>Available Quantity</b></span></div>
+						<div class="col col-md-5">
+							<div class="form-group right-inner-addon"  
+										ng-class="{'has-error' : productForm.productQty.$invalid && !productForm.productQty.$pristine}">
+								<input type="number" 
+											name="productQty" 
+											ng-model="product.units" 
+											class="form-control" 
+											ng-focus="message.showInsertMsg=false" 
+											required>
+								<i class="glyphicon glyphicon-remove" ng-click="reset('units')"></i>
+								<div ng-show="productForm.productQty.$invalid && !productForm.productQty.$pristine" class="help-block">Product Available Quantity is required.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row pad-top-20">
+						<div class="col col-md-4"><span><b>Cost Price/Unit</b></span></div>
+						<div class="col col-md-5">
+							<div class="form-group right-inner-addon"  
+										ng-class="{'has-error' : productForm.costPrice.$invalid && !productForm.costPrice.$pristine}">
+								<input type="number" 
+											name="costPrice" 
+											ng-model="product.cost_price" 
+											class="form-control" 
+											ng-focus="message.showInsertMsg=false" 
+											required>
+								<i class="glyphicon glyphicon-remove" ng-click="reset('cost_price')"></i>
+								<div ng-show="productForm.costPrice.$invalid && !productForm.costPrice.$pristine" class="help-block">Cost Price / unit is required.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row pad-top-20">
+						<div class="col col-md-4"><span><b>Selling Price/Unit</b></span></div>
+						<div class="col col-md-5">
+							<div class="form-group right-inner-addon"  
+										ng-class="{'has-error' : (productForm.sellingPrice.$invalid && !productForm.sellingPrice.$pristine) || error.showSellingPriceMsg}">
+								<input type="number" 
+											name="sellingPrice" 
+											ng-model="product.selling_price" 
+											class="form-control" 
+											ng-focus="message.showInsertMsg=false" 
+											required>
+								<i class="glyphicon glyphicon-remove" ng-click="reset('selling_price')"></i>
+								<div ng-show="productForm.sellingPrice.$invalid && !productForm.sellingPrice.$pristine" class="help-block">Selling Price / unit is required.</div>
+								<div ng-show="error.showSellingPriceMsg" class="help-block" ng-bind="error.sellingPriceMsg">	
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row pad-top-20">
+						<div class="col col-md-4">
+							<button type="submit" class="btn btn-primary btn-black" ng-disabled="productForm.$invalid">
+		      			Submit
+		  				</button>
+						</div>
+					</div>
+
+					<div class="row pad-top-20">
+						<div class="col col-md-8">
+							<div class="help-block" ng-show="message.showInsertMsg" ng-bind="message.insertMsg"></div>
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>

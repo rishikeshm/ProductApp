@@ -1,0 +1,131 @@
+<div class="container-fluid home-container">
+
+	<script type="text/ng-template" id="customTemplate.html">
+  <a class="product-name">
+      <span bind-html-unsafe="match.model.name | typeaheadHighlight:query"></span>
+  </a>
+	</script>
+
+	<div class="row">
+		<div class="col col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
+			<input type="text" ng-model="asyncProductSelected" ng-model-options="{debounce: 500}"
+							placeholder="Enter Product Name to Search ..." 
+							class="form-control input-lg" 
+							typeahead="product as product.name for product in getProducts($viewValue)" 
+							typeahead-min-length=3 
+							typeahead-loading="loadingProducts" 
+							typeahead-no-results="noResults"
+							typeahead-template-url="customTemplate.html"  
+              typeahead-on-select="onSelect($item, $model, $label)" 
+							autofocus>
+			<i ng-show="loadingProducts" class="glyphicon glyphicon-refresh"></i>
+			<div ng-show="noResults">
+      	<i class="glyphicon glyphicon-remove"></i> No Results Found
+    	</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col col-md-6 col-md-offset-3">
+			<div class="row">
+				<div class="col col-md-7 pad-top-20">
+					<div class="row">
+						<div class="col col-md-4"><b>Product Id:</b></div>
+						<div class="col col-md-6" ng-bind="asyncProductSelected._id"></div>
+					</div>
+				</div>
+				<div class="col col-md-5 pad-top-20">
+					<div class="row">
+						<div class="col col-md-4"><b>Quantity:</b></div>
+						<div class="col col-md-3" ng-bind="asyncProductSelected.units"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-8">
+					<div class="row">
+						<div class="col col-md-12 pad-top-20"><b>Product Name</b></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-12">
+					<div class="row">
+						<div class="col col-md-12 pad-top-5">
+							<input type="text"  
+                  ng-model="productName" 
+                  class="form-control" 
+                  ng-disabled="asyncProductSelected == undefined || asyncProductSelected._id == undefined"
+                  ng-enter-key="updateProducts('name', productName)" 
+                  ng-focus="resetMessages()">
+              <div ng-show="noProductName">
+                <i class="glyphicon glyphicon-remove"></i> Product Name can not be blank
+              </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-8">
+					<div class="row">
+						<div class="col col-md-12 pad-top-20"><b>Cost Price</b></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-8">
+					<div class="row">
+						<div class="col col-md-12 pad-top-5">
+							<span ng-bind="asyncProductSelected.cost_price"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-8">
+					<div class="row">
+						<div class="col col-md-12 pad-top-20"><b>Selling Price</b></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-8">
+					<div class="row">
+						<div class="col col-md-7 pad-top-5">
+							<input type="number" 
+                    class="form-control" 
+                    value="{{asyncProductSelected.selling_price}}" 
+                    ng-model="sellingPrice" 
+                    ng-disabled="asyncProductSelected == undefined || asyncProductSelected._id == undefined" 
+                    ng-enter-key="updateProducts('selling_price', sellingPrice)" 
+                    ng-focus="resetMessages()">
+
+              <div ng-show="noSellingPrice">
+                <i class="glyphicon glyphicon-remove"></i> Invalid Selling Price
+              </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    <div class="col col-md-6 col-md-offset-3">
+      <div class="row">
+        <div class="col col-md-12">
+          <div ng-show="updateSuccessMessage">
+            Product Updated Successfully
+          </div>
+          <div ng-show="updateErrorMessage">
+            Error updating Product
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
