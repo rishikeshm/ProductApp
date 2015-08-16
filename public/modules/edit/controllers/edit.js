@@ -9,7 +9,6 @@ angular.module('edit')
 		$scope.error = {'showSellingPriceMsg' : false};
 
 		$scope.submitProductEntryForm = function(valid) {
-			alert("Submitted!!!");
 			if($scope.product.selling_price < $scope.product.cost_price) {
 				$scope.error.sellingPriceMsg = 'Selling Price needs to be higher than Cost Price.';
 				$scope.error.showSellingPriceMsg = true;
