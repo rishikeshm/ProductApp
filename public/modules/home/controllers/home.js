@@ -13,6 +13,13 @@ angular.module('home')
 		$scope.updateSuccessMessage = false;
 		$scope.updateErrorMessage = false;
 
+		$scope.productModel = productApi.model.get();
+
+		if ($scope.productModel.hasOwnProperty('_id')) {
+			$scope.asyncProductSelected = angular.copy($scope.productModel);
+			$scope.productName = $scope.asyncProductSelected.name;
+			$scope.sellingPrice = $scope.asyncProductSelected.selling_price;
+		}
 
 		$scope.getProducts = function(typedProductName) {
 			$scope.promise = productApi.getProductDetails(typedProductName);
@@ -29,6 +36,7 @@ angular.module('home')
 		$scope.onSelect = function($item, $model, $label){
 			$scope.productName = $item.name;
 			$scope.sellingPrice = $item.selling_price;
+			productApi.model.set($scope.asyncProductSelected);
 		};
 
 		$scope.validateFields = function() {
@@ -56,7 +64,8 @@ angular.module('home')
 					$scope.promise = productApi.updateProductDetails($scope.asyncProductSelected);
 					return $scope.promise.then(
 						function(response, status){
-							$scope.updateSuccessMessage = true;							
+							$scope.updateSuccessMessage = true;
+							productApi.model.set($scope.asyncProductSelected);				
 							return response;
 						},
 						function(response, status){
@@ -84,6 +93,7 @@ angular.module('home')
 					$scope.noSellingPrice = false;
 					$scope.updateSuccessMessage = false;
 					$scope.updateErrorMessage = false;
+					productApi.model.set({});	
 				}
 			});
 			
