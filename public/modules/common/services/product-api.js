@@ -6,6 +6,10 @@
 angular.module('common')
 	.factory('productApi', ['$http', '$q', function($http, $q){
 
+		var model = {
+
+		};
+
 		var get = function(productName) {
 			return $http({
 				url: '/api/products/' + productName,
@@ -66,6 +70,15 @@ angular.module('common')
 							q.reject(response, status);						
 						});
 				return q.promise;
+			},
+
+			model: {
+				set: function(product) {
+					model = angular.copy(product);
+				},
+				get: function() {
+					return model;
+				}
 			}
 
 		};
