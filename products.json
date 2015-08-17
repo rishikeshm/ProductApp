@@ -1,0 +1,146 @@
+[{
+	"_ID" : "HP Envy 1250",
+	"ID" : 1234,
+	"cost_price" : 54000, 
+	"selling_price" : 70000, 
+	"units" : 200
+},
+{
+	"_ID" : "Asus X553MA-XX513D",
+	"ID" : 1235,
+	"cost_price" : 18000, 
+	"selling_price" : 20000, 
+	"units" : 120
+},
+{
+	"_ID" : "Acer Aspire E15E5-511",
+	"ID" : 1236,
+	"cost_price" : 22000, 
+	"selling_price" : 30000, 
+	"units" : 300
+},
+{
+	"_ID" : "Lenovo A10 59-388639",
+	"ID" : 1237,
+	"cost_price" : 20999, 
+	"selling_price" : 30000, 
+	"units" : 200
+},
+{
+	"_ID" : "Asus X450CA-WX214D",
+	"ID" : 1238,
+	"cost_price" : 29400, 
+	"selling_price" : 32000, 
+	"units" : 100
+},
+{
+	"_ID" : "Asus X550LAV-XX771D",
+	"cost_price" : 26000, 
+	"selling_price" : 36000, 
+	"units" : 200
+},
+{
+	"_ID" : "Lenovo G50-4580e3005rin",
+	"ID" : 1239,
+	"cost_price" : 21400, 
+	"selling_price" : 25000, 
+	"units" : 300
+},
+{
+	"_ID" : "New Samsung Rv513",
+	"ID" : 1245,
+	"cost_price" : 29990, 
+	"selling_price" : 34000, 
+	"units" : 200
+},
+{
+	"_ID" : "Lenovo G405",
+	"ID" : 1246,
+	"cost_price" : 22500, 
+	"selling_price" : 24990, 
+	"units" : 300
+},
+{
+	"_ID" : "Inspiron Desktop 20 3000 Series",
+	"ID" : 1248,
+	"cost_price" : 27890, 
+	"selling_price" : 30000, 
+	"units" : 100
+},
+{
+	"_ID" : "XPS 13 Laptop",
+	"ID" : 1255,
+	"cost_price" : 70990, 
+	"selling_price" : 45000, 
+	"units" : 100
+},
+{
+	"_ID" : "XPS 12 2-in-1 Ultrabook",
+	"ID" : 2255,
+	"cost_price" : 92390, 
+	"selling_price" : 99990, 
+	"units" : 100
+},
+{
+	"_ID" : "XPS 12 2-in-1 Ultrabook",
+	"ID" : 1299,
+	"cost_price" : 104090, 
+	"selling_price" : 112900, 
+	"units" : 80
+},
+{
+	"_ID" : "HP 15-R250TU",
+	"ID" : 2355,
+	"cost_price" : 20815, 
+	"selling_price" : 25000, 
+	"units" : 180
+},
+{
+	"_ID" : "LENOVO G50-80 80L0006CIN",
+	"ID" : 3245,
+	"cost_price" : 29850, 
+	"selling_price" : 35000, 
+	"units" : 120
+},
+{
+	"_ID" : "Lenovo 59-442243",
+	"ID" : 3355,
+	"cost_price" : 27800, 
+	"selling_price" : 30000, 
+	"units" : 50
+},
+{
+	"_ID" : "Dell 3542 Black",
+	"ID" : 1634,
+	"cost_price" : 24790, 
+	"selling_price" : 30000, 
+	"units" : 40
+},
+{
+	"_ID" : "Dell Vostro 3446 14-inch Laptop ",
+	"ID" : 134555,
+	"cost_price" : 32890, 
+	"selling_price" : 36000, 
+	"units" : 30
+},
+{
+	"_ID" : "Micromax Canvas Laptab LT666 10.1-inch Touchscreen Laptop",
+	"ID" : 12534345,
+	"cost_price" : 14999, 
+	"selling_price" : 18000, 
+	"units" : 110
+},
+{
+	"_ID" : "Apple Macbook Pro MD101HNA",
+	"ID" : 1234255,
+	"cost_price" : 54500, 
+	"selling_price" : 78900, 
+	"units" : 160
+},
+{
+	"_ID" : "Nexian Chromebook 11.6-inch Laptop",
+	"ID" : 11234255,
+	"cost_price" : 12499, 
+	"selling_price" : 15500, 
+	"units" : 10
+}]
