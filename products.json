@@ -1,145 +1,167 @@
 [{
-	"_ID" : "HP Envy 1250",
+	"_id" : "hp envy 1250",
 	"ID" : 1234,
+	"name" : "HP ENVY 1250",
 	"cost_price" : 54000, 
 	"selling_price" : 70000, 
 	"units" : 200
 },
 {
-	"_ID" : "Asus X553MA-XX513D",
+	"_id" : "asus x553ma-xx513d",
 	"ID" : 1235,
+	"name" : "Asus X553MA-XX513D",
 	"cost_price" : 18000, 
 	"selling_price" : 20000, 
 	"units" : 120
 },
 {
-	"_ID" : "Acer Aspire E15E5-511",
+	"_id" : "acer aspire e15e5-511",
 	"ID" : 1236,
+	"name" : "Acer Aspire E15E5-511",
 	"cost_price" : 22000, 
 	"selling_price" : 30000, 
 	"units" : 300
 },
 {
-	"_ID" : "Lenovo A10 59-388639",
+	"_id" : "lenovo a10 59-388639",
 	"ID" : 1237,
+	"name" : "Lenovo A10 59-388639",
 	"cost_price" : 20999, 
 	"selling_price" : 30000, 
 	"units" : 200
 },
 {
-	"_ID" : "Asus X450CA-WX214D",
+	"_id" : "Asus X450CA-WX214D",
 	"ID" : 1238,
+	"name" : "asus x450ca-wx214d",
 	"cost_price" : 29400, 
 	"selling_price" : 32000, 
 	"units" : 100
 },
 {
-	"_ID" : "Asus X550LAV-XX771D",
+	"_id" : "asus x550lav-xx771d",
+	"ID" : 909090,
+	"name" : "Asus X550LAV-XX771D",
 	"cost_price" : 26000, 
 	"selling_price" : 36000, 
 	"units" : 200
 },
 {
-	"_ID" : "Lenovo G50-4580e3005rin",
+	"_id" : "lenovo g50-4580e3005rin",
 	"ID" : 1239,
+	"name" : "Lenovo G50-4580e3005rin",
 	"cost_price" : 21400, 
 	"selling_price" : 25000, 
 	"units" : 300
 },
 {
-	"_ID" : "New Samsung Rv513",
+	"_id" : "new samsung rv513",
 	"ID" : 1245,
+	"name" : "New Samsung Rv513",
 	"cost_price" : 29990, 
 	"selling_price" : 34000, 
 	"units" : 200
 },
 {
-	"_ID" : "Lenovo G405",
+	"_id" : "lenovo g405",
 	"ID" : 1246,
+	"name" : "Lenovo G405",
 	"cost_price" : 22500, 
 	"selling_price" : 24990, 
 	"units" : 300
 },
 {
-	"_ID" : "Inspiron Desktop 20 3000 Series",
+	"_id" : "inspiron desktop 20 3000 series",
 	"ID" : 1248,
+	"name" : "Inspiron Desktop 20 3000 Series",
 	"cost_price" : 27890, 
 	"selling_price" : 30000, 
 	"units" : 100
 },
 {
-	"_ID" : "XPS 13 Laptop",
+	"_id" : "xps 13 laptop",
 	"ID" : 1255,
+	"name" : "XPS 13 Laptop",
 	"cost_price" : 70990, 
 	"selling_price" : 45000, 
 	"units" : 100
 },
 {
-	"_ID" : "XPS 12 2-in-1 Ultrabook",
+	"_id" : "xps 12 2-in-1 ultrabook",
 	"ID" : 2255,
+	"_id" : "XPS 12 2-in-1 Ultrabook",
 	"cost_price" : 92390, 
 	"selling_price" : 99990, 
 	"units" : 100
 },
 {
-	"_ID" : "XPS 12 2-in-1 Ultrabook",
+	"_id" : "xps 12 2-in-1 ultrabook",
 	"ID" : 1299,
+	"name" : "XPS 12 2-in-1 Ultrabook",
 	"cost_price" : 104090, 
 	"selling_price" : 112900, 
 	"units" : 80
 },
 {
-	"_ID" : "HP 15-R250TU",
+	"_id" : "HP 15-R250TU",
 	"ID" : 2355,
+	"name" : "hp 15-r250tu",
 	"cost_price" : 20815, 
 	"selling_price" : 25000, 
 	"units" : 180
 },
 {
-	"_ID" : "LENOVO G50-80 80L0006CIN",
+	"_id" : "lenovo g50-80 80l0006cin",
 	"ID" : 3245,
+	"name" : "LENOVO G50-80 80L0006CIN",
 	"cost_price" : 29850, 
 	"selling_price" : 35000, 
 	"units" : 120
 },
 {
-	"_ID" : "Lenovo 59-442243",
+	"_id" : "lenovo 59-442243",
 	"ID" : 3355,
+	"name" : "Lenovo 59-442243",
 	"cost_price" : 27800, 
 	"selling_price" : 30000, 
 	"units" : 50
 },
 {
-	"_ID" : "Dell 3542 Black",
+	"_id" : "dell 3542 black",
 	"ID" : 1634,
+	"name" : "Dell 3542 Black",
 	"cost_price" : 24790, 
 	"selling_price" : 30000, 
 	"units" : 40
 },
 {
-	"_ID" : "Dell Vostro 3446 14-inch Laptop ",
+	"_id" : "dell vostro 3446 14-inch laptop ",
 	"ID" : 134555,
+	"name" : "Dell Vostro 3446 14-inch Laptop ",
 	"cost_price" : 32890, 
 	"selling_price" : 36000, 
 	"units" : 30
 },
 {
-	"_ID" : "Micromax Canvas Laptab LT666 10.1-inch Touchscreen Laptop",
+	"_id" : "micromax canvas laptab lt666 10.1-inch touchscreen laptop",
 	"ID" : 12534345,
+	"name" : "Micromax Canvas Laptab LT666 10.1-inch Touchscreen Laptop",
 	"cost_price" : 14999, 
 	"selling_price" : 18000, 
 	"units" : 110
 },
 {
-	"_ID" : "Apple Macbook Pro MD101HNA",
+	"_id" : "apple macbook pro md101hna",
 	"ID" : 1234255,
+	"name" : "Apple Macbook Pro MD101HNA",
 	"cost_price" : 54500, 
 	"selling_price" : 78900, 
 	"units" : 160
 },
 {
-	"_ID" : "Nexian Chromebook 11.6-inch Laptop",
+	"_id" : "nexian chromebook 11.6-inch laptop",
 	"ID" : 11234255,
+	"name" : "Nexian Chromebook 11.6-inch Laptop",
 	"cost_price" : 12499, 
 	"selling_price" : 15500, 
 	"units" : 10

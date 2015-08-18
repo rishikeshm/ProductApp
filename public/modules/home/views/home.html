@@ -8,10 +8,12 @@
 
 	<div class="row">
 		<div class="col col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
-			<input type="text" ng-model="asyncProductSelected" ng-model-options="{debounce: 500}"
+			<input type="text" 
+							ng-model="productSelected" 
+							ng-model-options="{debounce: 500}"
 							placeholder="Enter Product Name to Search ..." 
 							class="form-control input-lg" 
-							typeahead="product as product.name for product in getProducts($viewValue)" 
+							typeahead="product.name for product in getProducts($viewValue)" 
 							typeahead-min-length=3 
 							typeahead-loading="loadingProducts" 
 							typeahead-no-results="noResults"
@@ -19,8 +21,8 @@
               typeahead-on-select="onSelect($item, $model, $label)" 
 							autofocus>
 			<i ng-show="loadingProducts" class="glyphicon glyphicon-refresh"></i>
-			<div ng-show="noResults">
-      	<i class="glyphicon glyphicon-remove"></i> No Results Found
+			<div ng-show="noResults"  class="help-block error-msg">
+      	<i class="glyphicon glyphicon-remove"></i><span> No Results Found</span>
     	</div>
 		</div>
 	</div>
@@ -31,7 +33,7 @@
 				<div class="col col-md-7 pad-top-20">
 					<div class="row">
 						<div class="col col-md-4"><b>Product Id:</b></div>
-						<div class="col col-md-6" ng-bind="asyncProductSelected._id"></div>
+						<div class="col col-md-6" ng-bind="asyncProductSelected.ID"></div>
 					</div>
 				</div>
 				<div class="col col-md-5 pad-top-20">
@@ -60,7 +62,7 @@
                   ng-disabled="asyncProductSelected == undefined || asyncProductSelected._id == undefined"
                   ng-enter-key="updateProducts('name', productName)" 
                   ng-focus="resetMessages()">
-              <div ng-show="noProductName">
+              <div ng-show="noProductName" class="help-block error-msg">
                 <i class="glyphicon glyphicon-remove"></i> Product Name can not be blank
               </div>
 						</div>
@@ -106,7 +108,7 @@
                     ng-enter-key="updateProducts('selling_price', sellingPrice)" 
                     ng-focus="resetMessages()">
 
-              <div ng-show="noSellingPrice">
+              <div ng-show="noSellingPrice" class="help-block error-msg">
                 <i class="glyphicon glyphicon-remove"></i> Invalid Selling Price
               </div>
 						</div>
@@ -115,14 +117,18 @@
 			</div>
 
 		</div>
-    <div class="col col-md-6 col-md-offset-3">
+    
+	</div>
+
+	<div class="row pad-top-20">
+		<div class="col col-md-6 col-md-offset-3">
       <div class="row">
         <div class="col col-md-12">
-          <div ng-show="updateSuccessMessage">
+          <div ng-show="updateSuccessMessage" class="help-block success-msg">
             Product Updated Successfully
           </div>
-          <div ng-show="updateErrorMessage">
-            Error updating Product
+          <div ng-show="updateErrorMessage" class="help-block error-msg">
+            Error updating Product - Possibly duplicate product name
           </div>
         </div>
       </div>

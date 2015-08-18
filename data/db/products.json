@@ -1,0 +1,168 @@
+[{
+	"_id" : "HP Envy 1250",
+	"ID" : 1234,
+	"name" :  "HP Envy 1250",
+	"cost_price" : 54000, 
+	"selling_price" : 70000, 
+	"units" : 200
+},
+{
+	"_id" : "Asus X553MA-XX513D",
+	"ID" : 1235,
+	"name" : "Asus X553MA-XX513D",
+	"cost_price" : 18000, 
+	"selling_price" : 20000, 
+	"units" : 120
+},
+{
+	"_id" : "Acer Aspire E15E5-511",
+	"ID" : 1236,
+	"name" : "Acer Aspire E15E5-511",
+	"cost_price" : 22000, 
+	"selling_price" : 30000, 
+	"units" : 300
+},
+{
+	"_id" : "Lenovo A10 59-388639",
+	"ID" : 1237,
+	"name" : "Lenovo A10 59-388639",
+	"cost_price" : 20999, 
+	"selling_price" : 30000, 
+	"units" : 200
+},
+{
+	"_id" : "Asus X450CA-WX214D",
+	"ID" : 1238,
+	"name" : "Asus X450CA-WX214D",
+	"cost_price" : 29400, 
+	"selling_price" : 32000, 
+	"units" : 100
+},
+{
+	"_id" : "Asus X550LAV-XX771D",
+	"ID" : 234355,
+	"name" : "Asus X550LAV-XX771D",
+	"cost_price" : 26000, 
+	"selling_price" : 36000, 
+	"units" : 200
+},
+{
+	"_id" : "Lenovo G50-4580e3005rin",
+	"ID" : 1239,
+	"name" : "Lenovo G50-4580e3005rin",
+	"cost_price" : 21400, 
+	"selling_price" : 25000, 
+	"units" : 300
+},
+{
+	"_id" : "New Samsung Rv513",
+	"ID" : 1245,
+	"name" : "New Samsung Rv513",
+	"cost_price" : 29990, 
+	"selling_price" : 34000, 
+	"units" : 200
+},
+{
+	"_id" : "Lenovo G405",
+	"ID" : 1246,
+	"name" : "Lenovo G405",
+	"cost_price" : 22500, 
+	"selling_price" : 24990, 
+	"units" : 300
+},
+{
+	"_id" : "Inspiron Desktop 20 3000 Series",
+	"ID" : 1248,
+	"name" : "Inspiron Desktop 20 3000 Series",
+	"cost_price" : 27890, 
+	"selling_price" : 30000, 
+	"units" : 100
+},
+{
+	"_id" : "XPS 13 Laptop",
+	"ID" : 1255,
+	"name" : "XPS 13 Laptop",
+	"cost_price" : 70990, 
+	"selling_price" : 45000, 
+	"units" : 100
+},
+{
+	"_id" : "XPS 12 2-in-1 Ultrabook",
+	"ID" : 2255,
+	"name" : "XPS 12 2-in-1 Ultrabook",
+	"cost_price" : 92390, 
+	"selling_price" : 99990, 
+	"units" : 100
+},
+{
+	"_id" : "XPS 12 2-in-1 Ultrabook",
+	"ID" : 1299,
+	"name" : "XPS 12 2-in-1 Ultrabook",
+	"cost_price" : 104090, 
+	"selling_price" : 112900, 
+	"units" : 80
+},
+{
+	"_id" : "HP 15-R250TU",
+	"ID" : 2355,
+	"name" : "HP 15-R250TU",
+	"cost_price" : 20815, 
+	"selling_price" : 25000, 
+	"units" : 180
+},
+{
+	"_id" : "LENOVO G50-80 80L0006CIN",
+	"ID" : 3245,
+	"name" : "LENOVO G50-80 80L0006CIN",
+	"cost_price" : 29850, 
+	"selling_price" : 35000, 
+	"units" : 120
+},
+{
+	"_id" : "Lenovo 59-442243",
+	"ID" : 3355,
+	"name" : "Lenovo 59-442243",
+	"cost_price" : 27800, 
+	"selling_price" : 30000, 
+	"units" : 50
+},
+{
+	"_id" : "Dell 3542 Black",
+	"ID" : 1634,
+	"name" : "Dell 3542 Black",
+	"cost_price" : 24790, 
+	"selling_price" : 30000, 
+	"units" : 40
+},
+{
+	"_id" : "Dell Vostro 3446 14-inch Laptop ",
+	"ID" : 134555,
+	"name" : "Dell Vostro 3446 14-inch Laptop ",
+	"cost_price" : 32890, 
+	"selling_price" : 36000, 
+	"units" : 30
+},
+{
+	"_id" : "Micromax Canvas Laptab LT666 10.1-inch Touchscreen Laptop",
+	"ID" : 12534345,
+	"name" : "Micromax Canvas Laptab LT666 10.1-inch Touchscreen Laptop",
+	"cost_price" : 14999, 
+	"selling_price" : 18000, 
+	"units" : 110
+},
+{
+	"_id" : "Apple Macbook Pro MD101HNA",
+	"ID" : 1234255,
+	"name" : "Apple Macbook Pro MD101HNA",
+	"cost_price" : 54500, 
+	"selling_price" : 78900, 
+	"units" : 160
+},
+{
+	"_id" : "Nexian Chromebook 11.6-inch Laptop",
+	"ID" : 11234255,
+	"name" : "Nexian Chromebook 11.6-inch Laptop",
+	"cost_price" : 12499, 
+	"selling_price" : 15500, 
+	"units" : 10
+}]

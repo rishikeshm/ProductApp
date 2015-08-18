@@ -1,6 +1,7 @@
 angular.module('productsApp', [
 		'ui.router',
 		'ui.bootstrap',
+		'ngStorage',
 		'home',
 		'edit',
 		'common'

@@ -85,7 +85,10 @@
 
 					<div class="row pad-top-20">
 						<div class="col col-md-8">
-							<div class="help-block" ng-show="message.showInsertMsg" ng-bind="message.insertMsg"></div>
+							<div class="help-block" 
+										ng-show="message.showInsertMsg" 
+										ng-bind="message.insertMsg"
+										ng-class="{'success-msg' : message.insertMsg.search('Success') != -1, 'error-msg' : message.insertMsg.search('Err') != -1}"></div>
 						</div>
 					</div>
 

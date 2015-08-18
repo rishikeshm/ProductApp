@@ -10,9 +10,16 @@ angular.module('common')
 
 		};
 
-		var get = function(productName) {
+		var getDetails = function(productName) {
 			return $http({
-				url: '/api/products/' + productName,
+				url: '/api/productDetails/' + productName,
+				method: 'GET'
+			});
+		};
+
+		var getNames = function(productName) {
+			return $http({
+				url: '/api/productNames/' + productName,
 				method: 'GET'
 			});
 		};
@@ -36,8 +43,23 @@ angular.module('common')
 		return {
 			getProductDetails : function(productName) {
 				var q = $q.defer();
-				get(productName)
+				getDetails(productName)
 					.success(function(response, status) {
+						console.log('GOt Product Details : ' + JSON.stringify(response));
+						q.resolve(response, status);
+					})
+					.error(function(response, status){
+						q.reject(response, status);						
+					});
+
+				return q.promise;
+			},
+
+			getProductNames : function(productName) {
+				var q = $q.defer();
+				getNames(productName)
+					.success(function(response, status) {
+						console.log('GOt Product names : ' + JSON.stringify(response));
 						q.resolve(response, status);
 					})
 					.error(function(response, status){

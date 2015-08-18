@@ -58,4 +58,13 @@
 
 .help-block {
 	font-size: 12px;
+	font-weight: bold;
+}
+
+.error-msg {
+	color: #a94442;
+}
+
+.success-msg {
+	color: #000000;
 }
